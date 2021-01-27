@@ -23,6 +23,7 @@ public class CollectionTools {
      * @param <R>   R
      * @return 集合
      */
+    @SafeVarargs
     public static <R> List<R> newArrayList(int size, R... param) {
         List<R> data = new ArrayList<>(Math.max(size, param.length));
         data.addAll(Arrays.asList(param));
